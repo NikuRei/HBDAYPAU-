@@ -1,1 +1,77 @@
-# HBDAYPAU-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Happy Birthday 💗</title>
+
+  <style>
+    body {
+      background-image: url("pinkbg.jpg");
+      background-repeat: repeat;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .box {
+      background: rgba(255, 255, 255, 0.85);
+      display: inline-block;
+      padding: 30px;
+      border-radius: 20px;
+    }
+
+    input {
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 10px;
+      border: none;
+      text-align: center;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 10px;
+      border: none;
+      background-color: hotpink;
+      color: white;
+      cursor: pointer;
+    }
+
+    p {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <h1>🎀 Enter the Secret Password 🎀</h1>
+    <p>(Hint: your birthday 💕)</p>
+
+    <input type="password" id="password" placeholder="DDMMYYYY">
+    <br>
+    <button onclick="checkPassword()">Enter</button>
+
+    <p id="error"></p>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const correctPassword = "02022011";
+      const userPassword = document.getElementById("password").value;
+
+      if (userPassword === correctPassword) {
+        window.location.href = "HBDAYPAU2.html";
+      } else {
+        document.getElementById("error").innerText =
+          "Wrong password 😭 try again!";
+      }
+    }
+  </script>
+
+</body>
+</html>
