@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Birthday Gift 🎁</title>
+<style>
+  body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ffb6c1, #ff69b4);
+    text-align: center;
+    color: white;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    background: linear-gradient(to right, #E718BD, #7D0D67, #ED4ACC, #9b59b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 3s linear infinite;
+  }
+
+  @keyframes rainbow {
+    0% {background-position: 0%;}
+    100% {background-position: 100%;}
+  }
+
+  .gift-emoji {
+    font-size: 6rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  .gift-emoji:hover {
+    transform: scale(1.2);
+  }
+
+  video {
+    margin-top: 30px;
+    max-width: 90%;
+    border-radius: 15px;
+    display: none;
+  }
+
+  .button-container {
+    margin-top: 30px;
+    display: none;
+  }
+
+  button {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #ff4b5c;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  button:hover {
+    background-color: #ff2e3c;
+  }
+
+</style>
+</head>
+<body>
+
+<h1>Here's my gift to you! 🎉</h1>
+
+<!-- Clickable Gift -->
+<div class="gift-emoji" onclick="openGift()">🎁</div>
+
+<!-- Video -->
+<video id="giftVideo" controls>
+  <source src="hbdaypaupanot.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<!-- Go Back Button -->
+<div class="button-container" id="buttonContainer">
+  <button onclick="goBack()">Go Back</button>
+</div>
+
+<script>
+function openGift() {
+    const video = document.getElementById('giftVideo');
+    video.style.display = 'block';
+    video.play();
+}
+
+// When video ends, show Go Back button
+const video = document.getElementById('giftVideo');
+video.addEventListener('ended', () => {
+    document.getElementById('buttonContainer').style.display = 'block';
+});
+
+function goBack() {
+    window.location.href = 'HBDAYPAU3.html';
+}
+</script>
+
+</body>
+</html>

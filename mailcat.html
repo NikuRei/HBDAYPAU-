@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday! 🎉</title>
+<style>
+  body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    color: #ff4b5c;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px #fff3c2;
+  }
+
+  .mail-emoji {
+    font-size: 4rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+  }
+
+  .mail-emoji:hover {
+    transform: scale(1.2);
+  }
+
+  .message-container {
+    max-width: 500px;
+    background: #fff9f5;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: none;
+    flex-direction: column;
+    text-align: left;
+    line-height: 1.5;
+    color: #3b2a50;
+    font-size: 1.1rem;
+  }
+
+  .sender {
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: right;
+    color: #ff4b5c;
+  }
+
+  .personal-message {
+    margin-top: 15px;
+    background: #ffe4e1;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+
+  .button-container {
+    margin-top: 30px;
+  }
+
+  button {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #ff4b5c;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  button:hover {
+    background-color: #ff2e3c;
+  }
+
+</style>
+</head>
+<body>
+
+<h1>📬 Birthday Messages! 🎉</h1>
+
+<!-- Clickable Emoji -->
+<div class="mail-emoji" onclick="showMessage()">📧</div>
+
+<!-- Birthday Message -->
+<div class="message-container" id="messageContainer">
+  <div>
+    Happy Birthday!!! 🎂🎉  
+    I hope your day is filled with so much joy, laughter, and all the little things that make you happiest.  
+    You deserve all the cake, all the hugs, and all the love today and always. 🥳💖  
+    Keep shining bright and chasing your dreams. 🌟✨
+  </div>
+
+  <div class="sender">From: Mica</div>
+
+  <div class="personal-message">
+    P.S. LOL KID IS GETTING OLDER. Anyway wishing you the best birthday ever! 🎈
+  </div>
+</div>
+
+<div class="button-container">
+  <button onclick="goBack()">Go Back</button>
+</div>
+
+<script>
+function showMessage() {
+    const container = document.getElementById('messageContainer');
+    container.style.display = 'flex';
+}
+
+function goBack() {
+    window.location.href = 'HBDAYPAU3.html';
+}
+</script>
+
+</body>
+</html>
