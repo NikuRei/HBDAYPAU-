@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Click the Cats</title>
 
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Comic Sans MS", Arial, sans-serif;
+      background: url("starpinkbg.jpg") center / cover no-repeat;
+      text-align: center;
+    }
+
+    
+    h1 {
+      margin-top: 30px;
+      font-size: 34px; /* bigger text */
+      color: #ff69b4; /* cute pink */
+      text-shadow:
+        2px 2px 0 #ffffff,
+        4px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .cat-wrapper {
+      position: relative;
+      width: 90%;
+      max-width: 800px;
+      margin: 30px auto;
+    }
+
+    .cat-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* invisible click areas */
+    .cat-btn {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 33.333%;
+    }
+
+    .cat-left  { left: 0; }
+    .cat-mid   { left: 33.333%; }
+    .cat-right { left: 66.666%; }
+  </style>
+</head>
+
+<body>
+
+  <h1>Click at these cuties! 😺</h1>
+
+  <div class="cat-wrapper">
+    <img src="catsss.png" alt="Cute cats">
+
+    <!-- invisible buttons -->
+    <a href="gamecat.html" class="cat-btn cat-left"></a>
+    <a href="mailcat.html" class="cat-btn cat-mid"></a>
+    <a href="giftcat.html" class="cat-btn cat-right"></a>
+  </div>
+
+</body>
+</html>
